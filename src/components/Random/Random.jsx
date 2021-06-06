@@ -1,3 +1,4 @@
+import './Random.css';
 
 const Random = (props) => {
   let min = props.min;
@@ -6,7 +7,6 @@ const Random = (props) => {
   return(
     <div className="random">
       <h4>Random value between {props.min} and {props.max} => {randomNumber} </h4>
-
     </div>
   )
 }

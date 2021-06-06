@@ -2,6 +2,7 @@ import React from 'react';
 import IdCard from './components/IdCards/IdCards';
 import Greetings from './components/greetings/Greetings';
 import Random from './components/Random/Random';
+import BoxColor from './components/BoxColor/BoxColor';
 
 function App() {
   return (
@@ -27,16 +28,22 @@ function App() {
         />
       </div>
 
-      <div className="greetings">
+      <div className="greetings_container">
         <h2>Greetings</h2>
         <Greetings lang="de"> Ludwig </Greetings>
         <Greetings lang="fr"> François </Greetings>
       </div>
 
-      <div className="random">
+      <div className="random_container">
         <h2>Random</h2>
         <Random min={1} max={6} />
         <Random min={1} max={100} />
+      </div>
+
+      <div className="boxcolor_container">
+        <h2>BoxColor</h2>
+        <BoxColor r={255} g={0} b={0} />
+        <BoxColor r={128} g={255} b={0} />
       </div>
     </div>
   );
