@@ -1,0 +1,11 @@
+.idCard {
+  display: flex;
+  border: 2px solid black;
+  margin: 2vh;
+}
+
+.idCard > img {
+  width: 20vh;
+  height: 20vh;
+  margin: 1.5vh;
+}
