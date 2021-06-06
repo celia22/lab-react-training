@@ -1,4 +1,3 @@
-import React from "react";
 import './idCards.css';
 
 

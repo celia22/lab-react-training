@@ -1,6 +1,7 @@
 import React from 'react';
 import IdCard from './components/IdCards/IdCards';
 import Greetings from './components/greetings/Greetings';
+import Random from './components/Random/Random';
 
 function App() {
   return (
@@ -30,6 +31,12 @@ function App() {
         <h2>Greetings</h2>
         <Greetings lang="de"> Ludwig </Greetings>
         <Greetings lang="fr"> François </Greetings>
+      </div>
+
+      <div className="random">
+        <h2>Random</h2>
+        <Random min={1} max={6} />
+        <Random min={1} max={100} />
       </div>
     </div>
   );
