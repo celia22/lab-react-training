@@ -1,0 +1,36 @@
+.credit_card_container {
+  display: flex;
+  margin: 4vh;
+  justify-content: space-around;
+}
+
+.credit_card {
+  width: 23%;
+  height: 20vh;
+  padding: 2vh;
+  border-radius: 3%;
+  display: flex;
+  flex-direction: column;
+}
+
+.credit_card_numbers {
+  font-size: 1.8rem;
+  margin: 2vh auto 1vh;
+}
+
+.credit_card_logo {
+  width: 20%;
+  height: 15%;
+  position: relative;
+  left: 75%;
+}
+
+.credit_card_content {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+}
+
+.credit_card_content > p {
+  margin: 1vh;
+}

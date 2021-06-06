@@ -2,8 +2,10 @@ import './idCards.css';
 
 
 const IdCard = (props) => {
-  const days = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
-    const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+  
+  const month = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+  const day = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
+  
   return(
     <div className="idCard">
            <img src={props.picture} alt="IDcard"/>
@@ -12,7 +14,7 @@ const IdCard = (props) => {
             <p><strong>Last name:</strong> {props.lastName}</p>
             <p><strong>Gender:</strong> {props.gender}</p>
             <p><strong>Height: </strong>{props.height/100}m</p>
-            <p><strong>Birth:</strong> {days[props.birth.getDay()]} {months[props.birth.getMonth()]} {props.birth.getDate()} {props.birth.getFullYear()}</p>
+            <p><strong>Birth:</strong> {day[props.birth.getDay()]} {month[props.birth.getMonth()]} {props.birth.getDate()} {props.birth.getFullYear()}</p>
             </div> 
         </div>
     )  

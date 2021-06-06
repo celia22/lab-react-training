@@ -1,16 +1,12 @@
 import './BoxColor.css';
 
 const BoxColor = (props) => {
-  let r= props.r;
-  let g= props.g;
-  let b= props.b;
+  const r= props.r;
+  const g= props.g;
+  const b= props.b;
 
-  const divStyle = {
-  backgroundColor: `rgb(${r},${g},${b})`   
-  };
- 
   return(
-   <div className="color_box" style={divStyle}> rgb({r},{g},{b}) </div>
+   <div className="color_box" style={{backgroundColor:`rgb(${r},${g},${b})`}}> rgb({r},{g},{b}) </div>
    
   )
 }
