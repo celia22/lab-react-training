@@ -4,7 +4,7 @@ const Rating = (props) => {
     
   return(
     <div>
-      <p>{"☆".repeat(whiteStar)} {"★".repeat(rounded)} </p>     
+      <p className="rating">{"☆".repeat(whiteStar)} {"★".repeat(rounded)} </p>     
     </div>
   )
 }

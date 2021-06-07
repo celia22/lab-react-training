@@ -1,0 +1,25 @@
+.driver_license_container > img {
+  width: 17vh;
+  height: 17vh;
+  border-radius: 50%;
+  padding: 3vh;
+}
+
+.driver_license_container {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(84, 84, 182);
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  border-radius: 7px;
+  margin: 3vh;
+  color: white;
+}
+
+.rating {
+  font-size: 1.5rem;
+}
+
+.driver_license_content > h4 {
+  font-size: 1.5rem;
+}
