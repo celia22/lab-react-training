@@ -1,9 +1,8 @@
 import './idCards.css';
 
-
 const IdCard = (props) => {
   
-const birth2String = birthDate => birthDate.toDateString();
+const birth2String = x => x.toDateString();
   
   return(
     <div className="idCard">
