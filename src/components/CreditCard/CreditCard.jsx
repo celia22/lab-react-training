@@ -1,21 +1,11 @@
 import "./CreditCard.css"
 
-
 const CreditCard = (props) => {
 
 const visibleNumbers = props.number.replace(/.(?=.{4,}$)/g, "•")
-let logo = " ";
 
-switch(props.type){
-  case "Visa":
-    logo = "../../img/visa.png"
-    break;
-  case "Master Card":
-    logo = "../../img/master-card.svg"
-    break;
-  default:
-    logo = "no image";
-}
+let logo = " ";
+props.type === "Visa" ? logo= "../../img/visa.png" : logo= "../../img/master-card.svg";
 
   return(
     <div className="credit_card" style={{backgroundColor: `${props.bgColor}`, color: `${props.color}`}}>
