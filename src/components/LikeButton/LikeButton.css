@@ -1,0 +1,14 @@
+.button_likes_container {
+  display: flex;
+  justify-content: center;
+}
+
+.button_likes {
+  width: 20vh;
+  height: 8vh;
+  color: white;
+  font-size: 1rem;
+  font-weight: bolder;
+  border: none;
+  margin: 2vh;
+}
