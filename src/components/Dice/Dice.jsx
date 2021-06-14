@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import "./Dice.css"
 
 const randomDice = Math.floor(Math.random() * 5) + 1;
-const randomDice2 = Math.floor(Math.random() * 5) + 1; 
+const randomDice2 = Math.floor(Math.random() * 5) + 1;
+
 class Dice extends Component{
   constructor(props){
     super(props)
@@ -17,7 +18,7 @@ class Dice extends Component{
     })    
   }
 
-  changeRandom= () => {       
+  changeRandom= () => {    
       this.setState({      
       imgSource: `/img/dice${[randomDice2]}.png`
     })    
