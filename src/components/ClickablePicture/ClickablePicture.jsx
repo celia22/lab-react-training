@@ -5,14 +5,16 @@ class ClickablePicture extends Component{
   constructor(props){
     super(props)
     this.state = {
-      img: this.props.img
+      img: this.props.img,
+      glasses: false,
     }
   }
 
-  changeImage = () => {
-    this.setState({
-      img:this.props.imgClicked
+  changeImage = () => { 
+    this.setState({    
+      glasses: !this.state.glasses,      
     })
+    this.state.glasses ? this.setState({img:this.props.imgClicked}) : this.setState({img:this.props.img})
   }
 
   render(){
