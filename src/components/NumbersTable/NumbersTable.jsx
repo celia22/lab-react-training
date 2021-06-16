@@ -1,43 +1,31 @@
-import React, { Component } from 'react';
 import "./NumbersTable.css"
 
-class NumbersTable extends Component{
-  constructor(props){
-    super(props)
-    this.state = {
-      limit: this.props.limit, 
-      arrayNumbers: []    
+const NumbersTable = (props) => {
 
-    }
-  }
-
-  createNumbers = () => {
-    let array = []
-    const { limit } = this.state
-    for (let i = 1; i < limit; i++){
-      array.push(i)     
-    }
-    this.setState = {
-      arrayNumbers: array,
-    }
-  }
-
-  render(){     
-    
-    return(
-      
-     <div>
-       {this.state.arrayNumbers.map((item, index) => {
-         <ul>
-           <li>{item}</li>
-         </ul>
-
-       })}
-
-     </div>
+  let array = []
   
-    )    
+  for (let i = 1; i <= props.limit; i++){
+      array.push(i)
   }
+  
+    return (
+      <div>
+        <div className="square_container">
+          {array.map((item, index) =>
+            index % 2 === 0 ? (
+              <div className="square">
+                <h3 >{index + 1}</h3>
+              </div>
+            ) : (
+              <div className="square" style={{ backgroundColor: 'red' }}>
+                <h3 >{index + 1}</h3>
+              </div>
+            )
+          )}
+        </div>
+      </div>
+    );  
 }
+
 
 export default NumbersTable;

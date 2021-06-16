@@ -18,18 +18,31 @@ class SignupPage extends Component{
     });
   };
 
+  contactSubmit = (e) => {
+    e.preventDefault();
+}
+
+//   ValidateEmail = (email) =>{
+//   if (/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(this.state.email))
+//   {
+//     return (true)
+//   }
+//     return (false)
+// }
+
   render(){
     const {email, password, nationality} = this.state
-    let hello = nationality === 'fr' ? "Bonjour" 
+    let hello = nationality === 'de' ? "Hallo" 
         : nationality === 'en' ? "Hello" 
-        : nationality === 'de' ? "Hallo"  
-        : "Hello";
-
+        : nationality === 'fr' ? "Bonjour"  
+        : "";
+       
     return(
       <div >
        <form className="signup_page_container">
           <label>Email:</label>
-          <input type="email" name="email" value={email} onChange={this.handleChange}/>
+          <input type="email" name="email"
+          value={email} onChange={this.handleChange} />
  
           <label>Password:</label>
           <input type="password" name="password" value={password} onChange={this.handleChange}/>
@@ -41,7 +54,7 @@ class SignupPage extends Component{
               <option value="fr">"fr"</option>
             </select>
           
-            <button>Submit</button>
+            <button onClick={this.contactSubmit}>Submit</button>
 
           <p>{hello}</p>
           <p>Your email address is: {email}</p>

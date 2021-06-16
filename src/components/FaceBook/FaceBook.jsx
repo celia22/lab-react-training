@@ -37,7 +37,7 @@ countriesArray = () => {
           <p><b>First name: </b>{item.firstName}</p>
           <p><b>Last name:</b> {item.lastName}</p>
           <p><b>Country:</b> {item.country}</p>
-          <p><b>Type: </b>{item.type}</p>
+          <p><b>Type: </b>{item.isStudent}</p>
           </div> 
         </div>     
         )  
